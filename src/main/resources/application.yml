@@ -3,9 +3,15 @@ spring:
     active: "dev"
 ---
 spring:
-  profiles: dev
   application:
     name: currency-exchange-service
+currencyExchange:
+  appId: 76d9797902004813a592f6b2402590a9
+  connectionTimeout: 30000
+  requestTimeout: 30000
+  socketTimeout: 60000
+  maxTotalConnections: 50
+  idleConnectionWaitTime: 30
 server:
   port: 8000
 feign:

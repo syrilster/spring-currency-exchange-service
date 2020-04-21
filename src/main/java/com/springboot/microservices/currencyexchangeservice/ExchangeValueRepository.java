@@ -1,9 +1,9 @@
 package com.springboot.microservices.currencyexchangeservice;
 
-import com.springboot.microservices.currencyexchangeservice.bean.ExchangeValue;
+import com.springboot.microservices.currencyexchangeservice.jpaApproach.JPAExchangeValue;
 import org.springframework.data.jpa.repository.JpaRepository;
 
-public interface ExchangeValueRepository extends JpaRepository<ExchangeValue, Long> {
+public interface ExchangeValueRepository extends JpaRepository<JPAExchangeValue, Long> {
     //JPA automatically forms a query using from and to property of ExchangeValue as where clause.
-    ExchangeValue findByFromAndTo(String from, String to);
+    JPAExchangeValue findByFromAndTo(String from, String to);
 }
