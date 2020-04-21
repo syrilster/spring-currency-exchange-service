@@ -13,8 +13,8 @@ spec:
         app: currency-exchange-app
     spec:
       containers:
-        - name: currency-exchange-app
-          image: syrils/currency-exchange-service:latest
+        - name: "currency-exchange-service-sha256-1"
+          image: "asia.gcr.io/kube-go-exp/currency-exchange-service@sha256:ee426b385ac46ab1ec19034f62a288c7c4fc7f892960c5f7f736969d5cbdc284"
           ports:
             - containerPort: 8000
           env:
