@@ -16,8 +16,8 @@ import java.math.RoundingMode;
 import java.util.Map;
 
 @Service
-public class CurrencyExchangeValue {
-    private static final Logger LOGGER = LoggerFactory.getLogger(CurrencyExchangeValue.class);
+public class CurrencyExchangeService {
+    private static final Logger LOGGER = LoggerFactory.getLogger(CurrencyExchangeService.class);
     @Autowired
     private Environment environment;
     @Autowired

@@ -23,7 +23,7 @@ public class CurrencyExchangeController {
     @Autowired
     private ExchangeValueRepository repository;
     @Autowired
-    private CurrencyExchangeValue exchange;
+    private CurrencyExchangeService exchange;
 
     //@CrossOrigin(origins = "http://localhost:3000")
     @GetMapping("/currency-exchange/from/{from}/to/{to}")
